@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#102b24" />
+  <meta name="description" content="Thoughtfully designed interiors for flats and individual homes across Andhra Pradesh and Telangana. Plan your home with Sannidhi Interiors." />
+  <meta property="og:title" content="Sannidhi Interiors — Homes made personal" />
+  <meta property="og:description" content="Beautiful, practical interiors for the way your family lives." />
+  <meta property="og:type" content="website" />
+  <title>Sannidhi Interiors | Thoughtful Homes, Beautifully Made</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { 950: '#0b1d18', 900: '#102b24', 800: '#173b31', 700: '#245344' },
+            sage: { 100: '#e9eee8', 200: '#d7e1d7', 300: '#b9caba' },
+            brass: { 300: '#d9c18e', 400: '#c9ad70' },
+            paper: '#f7f6f1', ink: '#18251f'
+          },
+          fontFamily: {
+            sans: ['DM Sans', 'Manrope', 'sans-serif'],
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            heading: ['Manrope', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 18px 55px rgba(15, 34, 27, .10)',
+            float: '0 20px 70px rgba(7, 24, 18, .24)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root { color-scheme: light; }
+    html { scroll-behavior: smooth; scroll-padding-top: 6.5rem; }
+    body { background: #f7f6f1; color: #18251f; }
+    ::selection { background: #c9ad70; color: #102b24; }
+    .glass-nav { background: rgba(247, 246, 241, .84); border: 1px solid rgba(255,255,255,.68); box-shadow: 0 10px 35px rgba(7,24,18,.10); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .hero-bg {
+      background-image:
+        linear-gradient(90deg, rgba(7, 25, 19, .82) 0%, rgba(7, 25, 19, .57) 43%, rgba(7, 25, 19, .13) 100%),
+        linear-gradient(0deg, rgba(7, 25, 19, .42), transparent 48%),
+        url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2400&q=90');
+      background-position: center, center, center 55%;
+      background-size: cover;
+    }
+    .eyebrow { letter-spacing: .22em; }
+    .service-card { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 22px 55px rgba(16,43,36,.11); border-color: #c9ad70; }
+    .image-frame { position: relative; overflow: hidden; }
+    .image-frame::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(255,255,255,.2); pointer-events: none; }
+    .form-control { width: 100%; border: 1px solid #d7ded7; border-radius: .7rem; background: #fff; padding: .9rem 1rem; color: #18251f; outline: none; transition: border-color .2s, box-shadow .2s; }
+    .form-control:focus { border-color: #245344; box-shadow: 0 0 0 4px rgba(36,83,68,.12); }
+    .form-control::placeholder { color: #87928b; }
+    .form-control:invalid:not(:placeholder-shown) { border-color: #b45353; }
+    .form-label { display: block; margin-bottom: .48rem; color: #24372e; font-size: .88rem; font-weight: 600; }
+    .social-link { display: grid; place-items: center; width: 2.65rem; height: 2.65rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.22); color: #f7f6f1; transition: background .2s, color .2s, transform .2s; }
+    .social-link:hover { background: #d9c18e; color: #102b24; transform: translateY(-2px); }
+    .skip-link { position: absolute; top: -5rem; left: 1rem; z-index: 100; padding: .75rem 1rem; background: #fff; color: #102b24; border-radius: .5rem; }
+    .skip-link:focus { top: 1rem; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Floating glass navigation -->
+  <header class="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-5">
+    <nav class="glass-nav mx-auto flex max-w-7xl items-center justify-between rounded-2xl px-4 py-3 sm:px-6" aria-label="Main navigation">
+      <a href="#home" class="flex items-center gap-3" aria-label="Sannidhi Interiors home">
+        <span class="grid h-10 w-10 place-items-center rounded-xl bg-forest-900 font-display text-2xl text-brass-300">S</span>
+        <span class="leading-tight">
+          <span class="block font-heading text-[1.02rem] font-extrabold tracking-[.12em] text-forest-900">SANNIDHI</span>
+          <span class="block text-[.62rem] font-semibold tracking-[.28em] text-forest-700">INTERIORS</span>
+        </span>
+      </a>
+
+      <div class="hidden items-center gap-8 md:flex">
+        <a class="text-sm font-semibold text-ink/75 transition hover:text-forest-900" href="#services">Services</a>
+        <a class="text-sm font-semibold text-ink/75 transition hover:text-forest-900" href="#approach">Our approach</a>
+        <a class="text-sm font-semibold text-ink/75 transition hover:text-forest-900" href="#contact">Contact</a>
+        <a href="#contact" class="rounded-full bg-forest-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-forest-700 focus:outline-none focus:ring-4 focus:ring-forest-900/20">Book Consultation <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <button id="menu-toggle" class="grid h-11 w-11 place-items-center rounded-xl border border-forest-900/10 text-forest-900 md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+        <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" /></svg>
+        <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="glass-nav mx-auto mt-2 hidden max-w-7xl rounded-2xl p-4 md:hidden">
+      <div class="flex flex-col gap-1">
+        <a class="rounded-xl px-4 py-3 text-sm font-semibold text-forest-900 hover:bg-sage-100" href="#services">Services</a>
+        <a class="rounded-xl px-4 py-3 text-sm font-semibold text-forest-900 hover:bg-sage-100" href="#approach">Our approach</a>
+        <a class="rounded-xl px-4 py-3 text-sm font-semibold text-forest-900 hover:bg-sage-100" href="#contact">Contact</a>
+        <a class="mt-2 rounded-xl bg-forest-900 px-4 py-3 text-center text-sm font-bold text-white" href="#contact">Book Consultation ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section id="home" class="hero-bg relative flex min-h-[690px] items-center overflow-hidden pt-28 sm:min-h-[760px] lg:min-h-[850px]">
+      <div class="absolute inset-0 bg-gradient-to-t from-forest-950/50 via-transparent to-forest-950/10"></div>
+      <div class="relative mx-auto w-full max-w-7xl px-5 pb-24 pt-20 sm:px-8 lg:px-12">
+        <div class="max-w-3xl">
+          <p class="eyebrow mb-6 text-xs font-bold uppercase text-brass-300 sm:text-sm">Thoughtful interiors · Made for real life</p>
+          <h1 class="font-display text-5xl leading-[1.08] text-white sm:text-6xl lg:text-7xl xl:text-[5.4rem]">Elevating Spaces,<br /><span class="italic text-brass-300">Inspiring Life</span></h1>
+          <p class="mt-7 max-w-xl text-base leading-8 text-white/85 sm:text-lg">Beautiful, practical homes designed around your family, your everyday rituals and the budget you have planned.</p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a href="#contact" class="inline-flex items-center justify-center gap-3 rounded-full bg-brass-300 px-7 py-4 text-sm font-extrabold text-forest-950 shadow-lg shadow-black/10 transition hover:-translate-y-0.5 hover:bg-[#e6d3a9] focus:outline-none focus:ring-4 focus:ring-brass-300/40">Plan your home <span aria-hidden="true">↗</span></a>
+            <a href="#services" class="inline-flex items-center justify-center rounded-full border border-white/50 px-7 py-4 text-sm font-bold text-white transition hover:bg-white/10">Explore our services</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-7 right-5 hidden items-center gap-3 text-[.68rem] font-semibold uppercase tracking-[.2em] text-white/80 md:flex lg:right-12">
+        <span class="h-px w-12 bg-brass-300"></span> Andhra Pradesh & Telangana
+      </div>
+    </section>
+
+    <!-- Intro strip -->
+    <section class="bg-forest-900 text-paper">
+      <div class="mx-auto grid max-w-7xl gap-7 px-5 py-9 sm:px-8 md:grid-cols-3 md:gap-10 lg:px-12">
+        <div class="flex items-start gap-4"><span class="mt-1 text-brass-300">✳</span><div><p class="font-heading text-sm font-bold">Made for your lifestyle</p><p class="mt-1 text-sm leading-6 text-white/65">Every corner planned for the way your family lives.</p></div></div>
+        <div class="flex items-start gap-4"><span class="mt-1 text-brass-300">✳</span><div><p class="font-heading text-sm font-bold">Budget-conscious choices</p><p class="mt-1 text-sm leading-6 text-white/65">Thoughtful material and design decisions, without the guesswork.</p></div></div>
+        <div class="flex items-start gap-4"><span class="mt-1 text-brass-300">✳</span><div><p class="font-heading text-sm font-bold">One team, start to finish</p><p class="mt-1 text-sm leading-6 text-white/65">A clear process from the first conversation to the finishing touches.</p></div></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="scroll-mt-24 bg-paper px-5 py-20 sm:px-8 sm:py-24 lg:px-12">
+      <div class="mx-auto max-w-7xl">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="eyebrow text-[.68rem] font-extrabold uppercase text-forest-700">What we do</p>
+          <h2 class="mt-4 font-display text-4xl leading-tight text-forest-950 sm:text-5xl">Good design. Thoughtful details.<br class="hidden sm:block" /> Homes that feel like yours.</h2>
+          <p class="mt-5 text-base leading-7 text-ink/65">From a compact city flat to an independent family home, we bring clarity and care to every stage of your interior project.</p>
+        </div>
+
+        <div class="mt-14 grid gap-5 md:grid-cols-3">
+          <article class="service-card rounded-3xl border border-sage-200 bg-white p-7 sm:p-8">
+            <div class="grid h-14 w-14 place-items-center rounded-2xl bg-sage-100 text-forest-900">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/><path d="M8 10h.01M16 10h.01"/></svg>
+            </div>
+            <p class="eyebrow mt-8 text-[.62rem] font-bold uppercase text-forest-700">01 / Residential</p>
+            <h3 class="mt-3 font-display text-2xl text-forest-950">Residential Design</h3>
+            <p class="mt-4 text-sm leading-7 text-ink/65">Personalised interiors for apartments and independent houses. Smart storage, comfortable layouts and finishes that feel like home.</p>
+            <a href="#contact" class="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest-800 hover:text-forest-600">Discuss your home <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card rounded-3xl border border-sage-200 bg-white p-7 sm:p-8">
+            <div class="grid h-14 w-14 place-items-center rounded-2xl bg-sage-100 text-forest-900">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M9 21V9h6v12M3 9h6m6 0h6M7 6h.01M17 6h.01M7 13h.01M17 13h.01"/></svg>
+            </div>
+            <p class="eyebrow mt-8 text-[.62rem] font-bold uppercase text-forest-700">02 / Commercial</p>
+            <h3 class="mt-3 font-display text-2xl text-forest-950">Commercial Architecture</h3>
+            <p class="mt-4 text-sm leading-7 text-ink/65">Welcoming, functional spaces for offices and small businesses—planned to support your team, customers and daily work.</p>
+            <a href="#contact" class="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest-800 hover:text-forest-600">Plan a workspace <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card rounded-3xl border border-sage-200 bg-white p-7 sm:p-8">
+            <div class="grid h-14 w-14 place-items-center rounded-2xl bg-sage-100 text-forest-900">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-6h6v6M3 8l9-6 9 6"/><path d="M9 10h.01M15 10h.01"/></svg>
+            </div>
+            <p class="eyebrow mt-8 text-[.62rem] font-bold uppercase text-forest-700">03 / Execution</p>
+            <h3 class="mt-3 font-display text-2xl text-forest-950">End-to-End Execution</h3>
+            <p class="mt-4 text-sm leading-7 text-ink/65">From measurements and material selection to site coordination and final handover, keep your project moving with one coordinated team.</p>
+            <a href="#contact" class="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest-800 hover:text-forest-600">Explore execution <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach / value proposition -->
+    <section id="approach" class="scroll-mt-24 overflow-hidden bg-[#eeeee7] px-5 py-20 sm:px-8 sm:py-24 lg:px-12">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.02fr_.98fr] lg:gap-20">
+        <div class="image-frame min-h-[390px] rounded-[2rem] shadow-soft sm:min-h-[520px]">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85" alt="Warm contemporary living room with natural materials and carefully arranged furniture" class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+          <div class="absolute bottom-5 left-5 right-5 z-10 rounded-2xl border border-white/30 bg-forest-950/75 p-5 text-white backdrop-blur-md sm:bottom-7 sm:left-7 sm:right-7 sm:p-6">
+            <p class="font-display text-2xl">A home should work beautifully.</p>
+            <p class="mt-2 text-sm leading-6 text-white/75">Not just on day one, but through everyday family life.</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow text-[.68rem] font-extrabold uppercase text-forest-700">Our approach</p>
+          <h2 class="mt-4 font-display text-4xl leading-tight text-forest-950 sm:text-5xl">A beautiful home begins with a better plan.</h2>
+          <p class="mt-6 text-base leading-8 text-ink/70">We believe thoughtful interiors should be within reach. That means listening first, understanding your priorities and helping you make confident decisions before work begins.</p>
+          <div class="mt-8 space-y-6">
+            <div class="flex gap-4"><span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-forest-900 text-xs font-bold text-brass-300">01</span><div><h3 class="font-heading font-bold text-forest-950">Understand your needs</h3><p class="mt-1 text-sm leading-6 text-ink/65">We learn how you use each room, what matters most and what budget you want to work within.</p></div></div>
+            <div class="flex gap-4"><span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-forest-900 text-xs font-bold text-brass-300">02</span><div><h3 class="font-heading font-bold text-forest-950">Design with clarity</h3><p class="mt-1 text-sm leading-6 text-ink/65">We shape layouts, finishes and storage around your priorities—not passing trends.</p></div></div>
+            <div class="flex gap-4"><span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-forest-900 text-xs font-bold text-brass-300">03</span><div><h3 class="font-heading font-bold text-forest-950">Bring it all together</h3><p class="mt-1 text-sm leading-6 text-ink/65">We coordinate the details through execution so the finished space feels cohesive and considered.</p></div></div>
+          </div>
+          <a href="#contact" class="mt-10 inline-flex items-center gap-3 rounded-full bg-forest-900 px-7 py-4 text-sm font-bold text-white transition hover:bg-forest-700">Start a conversation <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-24 bg-forest-950 px-5 py-20 sm:px-8 sm:py-24 lg:px-12">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[.78fr_1.22fr] lg:gap-20">
+        <div class="pt-2 text-paper">
+          <p class="eyebrow text-[.68rem] font-extrabold uppercase text-brass-300">Let's make room for living</p>
+          <h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Tell us about the home you're imagining.</h2>
+          <p class="mt-6 max-w-md text-base leading-8 text-white/65">Share a few details and the Sannidhi Interiors team will get in touch to understand your space, priorities and next steps.</p>
+          <div class="mt-10 border-t border-white/15 pt-7">
+            <p class="text-xs font-bold uppercase tracking-[.18em] text-brass-300">Service area</p>
+            <p class="mt-3 text-lg font-semibold text-white">Andhra Pradesh & Telangana</p>
+            <p class="mt-2 text-sm leading-6 text-white/55">For flats, independent houses and selected commercial spaces.</p>
+          </div>
+          <div class="mt-8 flex items-center gap-3 text-sm text-white/70"><span class="grid h-9 w-9 place-items-center rounded-full border border-white/20 text-brass-300">✳</span> No pressure. Just a thoughtful first conversation.</div>
+        </div>
+
+        <div class="rounded-[2rem] bg-paper p-6 shadow-float sm:p-9 lg:p-10">
+          <div class="mb-7">
+            <p class="text-xs font-extrabold uppercase tracking-[.18em] text-forest-700">Project enquiry</p>
+            <h3 class="mt-2 font-display text-3xl text-forest-950">Let's talk about your space.</h3>
+          </div>
+          <div id="form-alert" class="mb-5 hidden rounded-xl border px-4 py-3 text-sm" role="status" aria-live="polite"></div>
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+            <!-- Replace this placeholder with the access key from your Web3Forms dashboard. -->
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="New website enquiry — Sannidhi Interiors" />
+            <input type="hidden" name="from_name" value="Sannidhi Interiors Website" />
+            <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label class="form-label" for="full-name">Full Name <span class="text-red-700" aria-hidden="true">*</span></label>
+                <input class="form-control" id="full-name" name="name" type="text" placeholder="Your name" autocomplete="name" minlength="2" maxlength="80" required />
+              </div>
+              <div>
+                <label class="form-label" for="email">Email Address <span class="text-red-700" aria-hidden="true">*</span></label>
+                <input class="form-control" id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="120" required />
+              </div>
+            </div>
+
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label class="form-label" for="phone">Phone Number <span class="text-red-700" aria-hidden="true">*</span></label>
+                <input class="form-control" id="phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" inputmode="tel" pattern="(\+91[ -]?)?[6-9][0-9]{9}" title="Enter a valid 10-digit Indian mobile number, with or without +91." required />
+              </div>
+              <div>
+                <label class="form-label" for="service">Service Required <span class="text-red-700" aria-hidden="true">*</span></label>
+                <select class="form-control" id="service" name="service_required" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option>Residential interiors — flat</option>
+                  <option>Residential interiors — individual house</option>
+                  <option>Commercial architecture</option>
+                  <option>End-to-end execution</option>
+                  <option>Not sure yet — help me decide</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label" for="message">Tell us a little about your project <span class="text-red-700" aria-hidden="true">*</span></label>
+              <textarea class="form-control min-h-[132px] resize-y" id="message" name="message" placeholder="City, property type, approximate size, budget range or anything you'd like us to know..." minlength="10" maxlength="1500" required></textarea>
+            </div>
+
+            <button id="submit-button" type="submit" class="inline-flex w-full items-center justify-center gap-3 rounded-full bg-forest-900 px-7 py-4 text-sm font-extrabold text-white transition hover:bg-forest-700 focus:outline-none focus:ring-4 focus:ring-forest-900/20 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto">
+              <span id="submit-label">Send enquiry</span><span id="submit-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="text-xs leading-5 text-ink/50">By submitting, you agree that Sannidhi Interiors may contact you about this enquiry.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#081711] px-5 pb-8 pt-12 text-paper sm:px-8 lg:px-12">
+    <div class="mx-auto max-w-7xl">
+      <div class="flex flex-col justify-between gap-10 border-b border-white/10 pb-10 md:flex-row md:items-end">
+        <div>
+          <a href="#home" class="inline-flex items-center gap-3" aria-label="Sannidhi Interiors home">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-brass-300 font-display text-2xl text-forest-950">S</span>
+            <span class="leading-tight"><span class="block font-heading text-lg font-extrabold tracking-[.12em]">SANNIDHI</span><span class="block text-[.62rem] font-semibold tracking-[.28em] text-brass-300">INTERIORS</span></span>
+          </a>
+          <p class="mt-5 max-w-md text-sm leading-7 text-white/55">Thoughtful interiors for the places you call home. Proudly serving families across Andhra Pradesh and Telangana.</p>
+        </div>
+        <div class="md:text-right">
+          <p class="text-xs font-bold uppercase tracking-[.18em] text-brass-300">Let's stay connected</p>
+          <div class="mt-4 flex gap-3 md:justify-end">
+            <a id="whatsapp-link" class="social-link" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" aria-label="Chat with Sannidhi Interiors on WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.82 11.82 0 0 0 12.1 0C5.55 0 .22 5.32.22 11.87c0 2.09.55 4.13 1.6 5.93L.12 24l6.36-1.67a11.9 11.9 0 0 0 5.61 1.43h.01c6.55 0 11.87-5.32 11.87-11.87 0-3.17-1.23-6.15-3.45-8.41ZM12.1 21.74a9.84 9.84 0 0 1-5.02-1.38l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.82 9.82 0 0 1-1.51-5.2c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.45-4.44 9.87-9.9 9.87Zm5.43-7.4c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.68-2.09-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.63-.93-2.23-.24-.58-.49-.5-.68-.5h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.23 5.13 4.53.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.18-1.43-.08-.13-.28-.2-.58-.35Z"/></svg>
+            </a>
+            <a id="instagram-link" class="social-link" href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sannidhi Interiors on Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+            </a>
+            <a id="email-link" class="social-link" href="mailto:YOUR_EMAIL@gmail.com" aria-label="Email Sannidhi Interiors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+          <p class="mt-3 text-xs text-white/40">WhatsApp · Instagram · Email</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="current-year"></span> Sannidhi Interiors. All rights reserved.</p>
+        <a href="#home" class="font-semibold text-white/55 transition hover:text-brass-300">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // -------------------------------------------------------------
+    // BUSINESS DETAILS — replace these placeholders before launch.
+    // WhatsApp: country code + 10-digit number, digits only (e.g. 919876543210).
+    // -------------------------------------------------------------
+    const BUSINESS_CONTACT = {
+      whatsapp: '91XXXXXXXXXX',
+      email: 'YOUR_EMAIL@gmail.com',
+      instagram: 'YOUR_INSTAGRAM_HANDLE'
+    };
+
+    // Wire social links from the values above, so contact details live in one place.
+    const whatsappLink = document.getElementById('whatsapp-link');
+    const emailLink = document.getElementById('email-link');
+    const instagramLink = document.getElementById('instagram-link');
+    const whatsappMessage = encodeURIComponent('Hello Sannidhi Interiors, I would like to discuss an interior design project.');
+    whatsappLink.href = `https://wa.me/${BUSINESS_CONTACT.whatsapp}?text=${whatsappMessage}`;
+    emailLink.href = `mailto:${BUSINESS_CONTACT.email}`;
+    instagramLink.href = `https://www.instagram.com/${BUSINESS_CONTACT.instagram}/`;
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Smooth in-page navigation, respecting the visitor's reduced-motion setting.
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const targetId = link.getAttribute('href');
+        if (!targetId || targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+        if (window.history && window.history.replaceState) window.history.replaceState(null, '', targetId);
+        closeMobileMenu();
+      });
+    });
+
+    // Accessible mobile navigation toggle.
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOpenIcon = document.getElementById('menu-open-icon');
+    const menuCloseIcon = document.getElementById('menu-close-icon');
+
+    function closeMobileMenu() {
+      mobileMenu.classList.add('hidden');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation menu');
+      menuOpenIcon.classList.remove('hidden');
+      menuCloseIcon.classList.add('hidden');
+    }
+
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      if (isExpanded) {
+        closeMobileMenu();
+      } else {
+        mobileMenu.classList.remove('hidden');
+        menuToggle.setAttribute('aria-expanded', 'true');
+        menuToggle.setAttribute('aria-label', 'Close navigation menu');
+        menuOpenIcon.classList.add('hidden');
+        menuCloseIcon.classList.remove('hidden');
+      }
+    });
+
+    // Web3Forms AJAX submission with inline feedback.
+    const contactForm = document.getElementById('contact-form');
+    const formAlert = document.getElementById('form-alert');
+    const submitButton = document.getElementById('submit-button');
+    const submitLabel = document.getElementById('submit-label');
+    const submitArrow = document.getElementById('submit-arrow');
+
+    function showFormAlert(message, type) {
+      formAlert.textContent = message;
+      formAlert.classList.remove('hidden', 'border-emerald-200', 'bg-emerald-50', 'text-emerald-900', 'border-red-200', 'bg-red-50', 'text-red-900');
+      if (type === 'success') {
+        formAlert.classList.add('border-emerald-200', 'bg-emerald-50', 'text-emerald-900');
+      } else {
+        formAlert.classList.add('border-red-200', 'bg-red-50', 'text-red-900');
+      }
+      formAlert.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'nearest' });
+    }
+
+    contactForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!contactForm.reportValidity()) return;
+
+      const accessKey = contactForm.querySelector('input[name="access_key"]').value.trim();
+      if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+        showFormAlert('The enquiry form is almost ready. Please add your Web3Forms access key to the page before accepting submissions.', 'error');
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitLabel.textContent = 'Sending...';
+      submitArrow.textContent = '…';
+      formAlert.classList.add('hidden');
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' }
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || result.success !== true) {
+          const message = result.message || result.body?.message || 'We could not send your enquiry right now. Please try again or contact us on WhatsApp.';
+          throw new Error(message);
+        }
+
+        showFormAlert('Thank you! Your enquiry has been sent successfully. The Sannidhi Interiors team will be in touch.', 'success');
+        contactForm.reset();
+      } catch (error) {
+        showFormAlert(error.message || 'Something went wrong. Please try again in a moment.', 'error');
+      } finally {
+        submitButton.disabled = false;
+        submitLabel.textContent = 'Send enquiry';
+        submitArrow.textContent = '↗';
+      }
+    });
+  </script>
+</body>
+</html>
