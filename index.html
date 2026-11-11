@@ -197,7 +197,7 @@
             <div class="flex gap-4"><span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-forest-900 text-xs font-bold text-brass-300">02</span><div><h3 class="font-heading font-bold text-forest-950">Design with clarity</h3><p class="mt-1 text-sm leading-6 text-ink/65">We shape layouts, finishes and storage around your priorities—not passing trends.</p></div></div>
             <div class="flex gap-4"><span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-forest-900 text-xs font-bold text-brass-300">03</span><div><h3 class="font-heading font-bold text-forest-950">Bring it all together</h3><p class="mt-1 text-sm leading-6 text-ink/65">We coordinate the details through execution so the finished space feels cohesive and considered.</p></div></div>
           </div>
-          <a id="whatsapp-conversation-link" href="https://wa.me/918688280607?text=Hello%20Sannidhi%20Interiors%2C%20I%20would%20like%20to%20discuss%20an%20interior%20design%20project." target="_blank" rel="noopener noreferrer" class="mt-10 inline-flex items-center gap-3 rounded-full bg-forest-900 px-7 py-4 text-sm font-bold text-white transition hover:bg-forest-700">Start a conversation <span aria-hidden="true">↗</span></a>
+          <a href="https://wa.me/918688280607?text=Hello%20Sannidhi%20Interiors%2C%20I%20would%20like%20to%20discuss%20an%20interior%20design%20project." class="mt-10 inline-flex items-center gap-3 rounded-full bg-forest-900 px-7 py-4 text-sm font-bold text-white transition hover:bg-forest-700">Start a conversation <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -321,11 +321,9 @@
     // Wire social links from the values above, so contact details live in one place.
     const whatsappLink = document.getElementById('whatsapp-link');
     const emailLink = document.getElementById('email-link');
-    const whatsappConversationLink = document.getElementById('whatsapp-conversation-link');
     const instagramLink = document.getElementById('instagram-link');
     const whatsappMessage = encodeURIComponent('Hello Sannidhi Interiors, I would like to discuss an interior design project.');
     whatsappLink.href = `https://wa.me/${BUSINESS_CONTACT.whatsapp}?text=${whatsappMessage}`;
-    whatsappConversationLink.href = whatsappLink.href;
     emailLink.href = `mailto:${BUSINESS_CONTACT.email}`;
     instagramLink.href = `https://www.instagram.com/${BUSINESS_CONTACT.instagram}/`;
     document.getElementById('current-year').textContent = new Date().getFullYear();
