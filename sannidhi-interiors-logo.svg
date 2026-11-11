@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" width="1080" height="900" role="img" aria-label="Sannidhi Interiors logo">
+<style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&amp;family=Montserrat:wght@500&amp;display=swap');</style>
+<rect width="360" height="300" fill="#0E5E48"/>
+<path d="M126 170V100a54 54 0 0 1 108 0v70Z" fill="none" stroke="#F4EEDF" stroke-width="2.5"/>
+<rect x="150" y="86" width="36" height="22" fill="none" stroke="#F4EEDF" stroke-width="1.5"/>
+<rect x="144" y="118" width="48" height="14" rx="5" fill="none" stroke="#E3C77E" stroke-width="2"/>
+<rect x="140" y="130" width="56" height="20" rx="6" fill="none" stroke="#E3C77E" stroke-width="2"/>
+<path d="M214 150V106" stroke="#E3C77E" stroke-width="2"/>
+<polygon points="204,96 224,96 220,108 208,108" fill="#E3C77E"/>
+<line x1="126" y1="152" x2="234" y2="152" stroke="#F4EEDF" stroke-width="1.5"/>
+<text x="180" y="212" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="38" letter-spacing="8" fill="#F4EEDF">SANNIDHI</text>
+<text x="180" y="240" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="11" letter-spacing="9" fill="#E3C77E">INTERIORS</text>
+</svg>
